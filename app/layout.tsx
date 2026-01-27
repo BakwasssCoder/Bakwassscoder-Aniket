@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import MorphicNavbar from "@/components/kokonutui/morphic-navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +26,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+    //  style={{
+    //         background: "radial-gradient(125% 125% at 50% 90%, #000000 40%, #0d1a36 100%)",
+    //       }}
+
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className=" relative">
+        <div className="  fixed z-90 py-5  w-full ">
+          <MorphicNavbar/> 
+        </div>
+       
+          {children}
+          </div>
+  
+   
+      
       </body>
     </html>
   );
