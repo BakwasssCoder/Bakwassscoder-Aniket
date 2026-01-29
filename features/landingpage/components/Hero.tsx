@@ -37,13 +37,13 @@ const Hero = () => {
         <div className='w-full flex flex-col items-center gap-4 px-2'>
           <TextRoll
             key={currentText}
-            className={` ${textPrimary} ${geist.className} text-amber-300 font-bold text-4xl sm:text-5xl md:text-8xl transition-all duration-500`}
+            className={` ${textPrimary} ${geist.className} text-amber-300 font-bold text-3xl sm:text-5xl md:text-8xl transition-all duration-500 max-w-full`}
             center
           >
             {currentText}
           </TextRoll>
 
-          <h2 className={` ${geist.className} text-white text-xl sm:text-2xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent px-4`}>
+          <h2 className={` ${geist.className} text-white text-base sm:text-2xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent px-4 max-w-full`}>
             The Best Vibe Coder in the World
           </h2>
         </div>

@@ -63,13 +63,13 @@ const Skiper30 = ({ img = image }: { img?: string[] }) => {
         background: "radial-gradient(125% 125% at 50% 90%, #000000 40%, #0d1a36 100%)",
       }}
 
-      className="w-full   text-black">
-      <div className="font-geist flex h-[80vh] items-center justify-center gap-2">
+      className="w-full text-black overflow-x-hidden">
+      <div className="font-geist flex min-h-[60vh] md:h-[80vh] items-center justify-center gap-2 px-4">
 
         {/* <span className="relative text-yellow-300 max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-white after:to-black after:content-['']">
             scroll down to see
           </span> */}
-        <div className=" text-white text-8xl gap-10 grid grid-cols-2 w-full   ">
+        <div className="text-white text-4xl sm:text-6xl md:text-8xl gap-4 md:gap-10 grid grid-cols-2 w-full max-w-6xl">
           <div className="  flex justify-end ">
             <p>THE</p>
           </div>
@@ -146,7 +146,7 @@ type ColumnProps = {
 const Column = ({ images, y }: ColumnProps) => {
   return (
     <motion.div
-      className="relative -top-[45%] flex h-full w-1/4 min-w-[500px] flex-col gap-[2vw] first:top-[-45%] [&:nth-child(2)]:top-[-95%] [&:nth-child(3)]:top-[-45%] [&:nth-child(4)]:top-[-75%]"
+      className="relative -top-[45%] flex h-full w-1/4 min-w-[300px] md:min-w-[500px] flex-col gap-[2vw] first:top-[-45%] [&:nth-child(2)]:top-[-95%] [&:nth-child(3)]:top-[-45%] [&:nth-child(4)]:top-[-75%]"
       style={{ y }}
     >
       {images.map((src, i) => (
