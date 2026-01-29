@@ -5,26 +5,26 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navItems = {
-  "/": {
+  "#home": {
     name: "home",
   },
-  "/works": {
+  "#projects": {
     name: "works",
   },
-  "/blog": {
+  "#contributions": {
     name: "blog",
   },
-  "/about": {
+  "#about": {
     name: "about",
   },
 };
 
 export function MorphicNavbar() {
-  const [activePath, setActivePath] = useState("/");
+  const [activePath, setActivePath] = useState("#home");
 
   const isActiveLink = (path: string) => {
-    if (path === "/") {
-      return activePath === "/";
+    if (path === "#home") {
+      return activePath === "#home";
     }
     return activePath.startsWith(path);
   };
@@ -48,15 +48,22 @@ export function MorphicNavbar() {
                   isActive
                     ? "mx-2 rounded-xl font-semibold text-lg"
                     : clsx(
-                        (isActiveLink(prevPath || "") || isFirst) &&
-                          "rounded-l-xl",
-                        (isActiveLink(nextPath || "") || isLast) &&
-                          "rounded-r-xl"
-                      )
+                      (isActiveLink(prevPath || "") || isFirst) &&
+                      "rounded-l-xl",
+                      (isActiveLink(nextPath || "") || isLast) &&
+                      "rounded-r-xl"
+                    )
                 )}
-                href="#"
+                href={path}
                 key={path}
-                onClick={() => setActivePath(path)}
+                onClick={(e) => {
+                  setActivePath(path);
+                  if (path.startsWith('#')) {
+                    e.preventDefault();
+                    const element = document.querySelector(path);
+                    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
               >
                 {name}
               </Link>

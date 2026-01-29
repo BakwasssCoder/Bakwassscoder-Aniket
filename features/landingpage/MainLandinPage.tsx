@@ -22,42 +22,75 @@ import MyDetails from "./components/MyDetails";
 import Contributions from "./components/Contributions";
 import TweetCard from "@/components/kokonutui/tweet-card";
 import XCards from "./components/XCards";
+import AboutMe from "./components/AboutMe";
+import Education from "./components/Education";
+import WhatIDo from "./components/WhatIDo";
+import BusinessVentures from "./components/BusinessVentures";
+import PhilosophyMission from "./components/PhilosophyMission";
 
 const MainLandinPage = () => {
   return (
-    <div className=" h-screen w-screen  ">
-      <section>
+    <div className=" min-h-screen w-screen  ">
+      {/* Hero Section */}
+      <section id="home">
         <Hero />
       </section>
-    
-      <section>
-        <GridCarousel />
+
+      {/* About Me Section */}
+      <section id="about">
+        <AboutMe />
       </section>
-      {/* <section>
-    <ImageCard/>
-   </section> */}
+
+      {/* Education Section */}
       <section>
-        <FavSongs />
+        <Education />
       </section>
+
+      {/* What I Do Section */}
       <section>
-        <SuffelCard />
+        <WhatIDo />
       </section>
-      {/* <section>
-    <HowerExpand/>
-   </section> */}
+
+      {/* Tech Stack Stats */}
       <section>
         <MyDetails />
       </section>
-      <section>
-        <Contributions/>
-      </section>
-      <section>
-        
-       <XCards/>
 
-        
+      {/* Photo Gallery */}
+      <section>
+        <GridCarousel />
       </section>
-       
+
+      {/* Favorite Songs */}
+      <section>
+        <FavSongs />
+      </section>
+
+      {/* Favorites Carousel */}
+      <section>
+        <SuffelCard />
+      </section>
+
+      {/* Business Ventures */}
+      <section id="projects">
+        <BusinessVentures />
+      </section>
+
+      {/* GitHub Contributions */}
+      <section id="contributions">
+        <Contributions />
+      </section>
+
+      {/* Twitter Cards */}
+      <section>
+        <XCards />
+      </section>
+
+      {/* Philosophy & Mission */}
+      <section>
+        <PhilosophyMission />
+      </section>
+
     </div>
   );
 };

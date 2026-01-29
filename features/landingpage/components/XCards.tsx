@@ -5,50 +5,50 @@ import React from "react";
 
 const XCards = () => {
   return (
-    <div 
-         style={{
-      background: "radial-gradient(125% 125% at 50% 100%, #000000 40%, #010133 100%)",
-    }}
-    className=" flex flex-col ">
-        <div className=" flex justify-center mt-30 ">
-            <ShimmerText className=' text-6xl' text={"MY TWEETS"} />
-        </div>
+    <div
+      style={{
+        background: "radial-gradient(125% 125% at 50% 100%, #000000 40%, #010133 100%)",
+      }}
+      className=" flex flex-col ">
+      <div className=" flex justify-center mt-30 ">
+        <ShimmerText className=' text-6xl' text={"MY TWEETS"} />
+      </div>
       <div className=" h-[50vh] items-center w-full flex justify-evenly">
         <TweetCard
-          authorName={"sujal"}
-          authorHandle={"Sujal3654282297"}
+          authorName={"Aniket Prashar"}
+          authorHandle={"anikettt_tsx"}
           authorImage={
             "https://pbs.twimg.com/profile_images/1941829109262528512/WTgPV2dk_400x400.jpg"
           }
           reply={{
-            authorName: "Naman",
-            authorHandle: "namn2453",
+            authorName: "Tech Community",
+            authorHandle: "techdev2025",
             authorImage:
               "https://pbs.twimg.com/profile_images/1593304942210478080/TUYae5z7_400x400.jpg",
-            content: "Awesome.",
+            content: "This is the way! 🚀",
             isVerified: true,
-            timestamp: "Aug 13, 2025",
+            timestamp: "Jan 15, 2026",
           }}
-          content={["Bunking college for learning skills is not cheating"]}
-          timestamp={"Aug 13, 2025"}
+          content={["Building SaaS tools that merge automation + aesthetics + analytics 🚀 Dream in code. Build in logic. Launch in style."]}
+          timestamp={"Jan 15, 2026"}
         />
         <TweetCard
-          authorName={"sujal"}
-          authorHandle={"Sujal3654282297"}
+          authorName={"Aniket Prashar"}
+          authorHandle={"anikettt_tsx"}
           reply={{
-            authorName: "Naman",
-            authorHandle: "namn2453",
+            authorName: "Dev Friends",
+            authorHandle: "devfriends",
             authorImage:
               "https://pbs.twimg.com/profile_images/1593304942210478080/TUYae5z7_400x400.jpg",
-            content: "Keep It Up",
+            content: "Debugging at 3 AM hits different 💀",
             isVerified: true,
-            timestamp: "Sep 6, 2025",
+            timestamp: "Jan 20, 2026",
           }}
           authorImage={
             "https://pbs.twimg.com/profile_images/1941829109262528512/WTgPV2dk_400x400.jpg"
           }
-          content={["Resolving casual bugs of my internship project 🙃"]}
-          timestamp={"Sep 6, 2025"}
+          content={["Debugging feels like hacking NASA systems at 3 AM ☕ Fueled by caffeine and cosmic vibes 🪐"]}
+          timestamp={"Jan 20, 2026"}
         />
       </div>
       <div className=" p-10 flex justify-center ">

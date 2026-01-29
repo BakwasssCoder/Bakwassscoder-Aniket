@@ -10,7 +10,7 @@
  * @github: https://github.com/kokonut-labs/kokonutui
  */
 
-import { Instagram, Linkedin,Link2, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Link2, Twitter } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -27,10 +27,10 @@ export default function SocialButton({
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const shareButtons = [
-    { icon: Twitter, label: "Share on Twitter", link:"https://x.com/Sujal3654282297" },
-    { icon: Instagram, label: "Share on Instagram", link:"https://www.instagram.com/sujal_mehra_02/"  },
-    { icon: Linkedin, label: "Share on LinkedIn", link:"https://www.linkedin.com/in/sujal-mehra-836a6b2b5/"  },
-    { icon: Link2, label: "Copy link",link:"" },
+    { icon: Twitter, label: "Share on Twitter", link: "https://x.com/anikettt_tsx" },
+    { icon: Instagram, label: "Share on Instagram", link: "https://www.instagram.com/anikettt.tsx/" },
+    { icon: Linkedin, label: "Share on LinkedIn", link: "https://www.linkedin.com/in/aniket-prashar/" },
+    { icon: Link2, label: "Copy link", link: "" },
   ];
 
   const handleShare = (index: number) => {
@@ -66,7 +66,7 @@ export default function SocialButton({
           {...props}
         >
           <span className="flex items-center gap-2">
-            <Link2  className="h-4 w-4" />
+            <Link2 className="h-4 w-4" />
             Hover me
           </span>
         </Button>
@@ -84,64 +84,64 @@ export default function SocialButton({
       >
         {shareButtons.map((button, i) => (
           <Link href={button.link} target="_blank" >
-          <motion.button
-            animate={{
-              opacity: isVisible ? 1 : 0,
-              x: isVisible ? 0 : -20,
-            }}
-            aria-label={button.label}
-            className={cn(
-              "h-10",
-              "w-10",
-              "flex items-center justify-center",
-              "bg-black dark:bg-white",
-              "text-white dark:text-black",
-              i === 0 && "rounded-l-md",
-              i === 3 && "rounded-r-md",
-              "border-white/10 border-r last:border-r-0 dark:border-black/10",
-              "hover:bg-gray-900 dark:hover:bg-gray-100",
-              "outline-none",
-              "relative overflow-hidden",
-              "transition-colors duration-200"
-            )}
-            
-            key={`share-${button.label}`}
-            onClick={() => handleShare(i)}
-            transition={{
-              duration: 0.3,
-              ease: [0.23, 1, 0.32, 1],
-              delay: isVisible ? i * 0.05 : 0,
-            }}
-            type="button"
-          >
-            <motion.div
+            <motion.button
               animate={{
-                scale: activeIndex === i ? 0.85 : 1,
+                opacity: isVisible ? 1 : 0,
+                x: isVisible ? 0 : -20,
               }}
-              className="relative z-10"
+              aria-label={button.label}
+              className={cn(
+                "h-10",
+                "w-10",
+                "flex items-center justify-center",
+                "bg-black dark:bg-white",
+                "text-white dark:text-black",
+                i === 0 && "rounded-l-md",
+                i === 3 && "rounded-r-md",
+                "border-white/10 border-r last:border-r-0 dark:border-black/10",
+                "hover:bg-gray-900 dark:hover:bg-gray-100",
+                "outline-none",
+                "relative overflow-hidden",
+                "transition-colors duration-200"
+              )}
+
+              key={`share-${button.label}`}
+              onClick={() => handleShare(i)}
               transition={{
-                duration: 0.2,
-                ease: "easeInOut",
+                duration: 0.3,
+                ease: [0.23, 1, 0.32, 1],
+                delay: isVisible ? i * 0.05 : 0,
               }}
+              type="button"
             >
-              
+              <motion.div
+                animate={{
+                  scale: activeIndex === i ? 0.85 : 1,
+                }}
+                className="relative z-10"
+                transition={{
+                  duration: 0.2,
+                  ease: "easeInOut",
+                }}
+              >
+
                 <button.icon href={button.link} className="h-4  w-4" />
-             
-             
-             
-            </motion.div>
-            <motion.div
-              animate={{
-                opacity: activeIndex === i ? 0.15 : 0,
-              }}
-              className="absolute inset-0 bg-white dark:bg-black"
-              initial={{ opacity: 0 }}
-              transition={{
-                duration: 0.2,
-                ease: "easeInOut",
-              }}
-            />
-          </motion.button>
+
+
+
+              </motion.div>
+              <motion.div
+                animate={{
+                  opacity: activeIndex === i ? 0.15 : 0,
+                }}
+                className="absolute inset-0 bg-white dark:bg-black"
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.2,
+                  ease: "easeInOut",
+                }}
+              />
+            </motion.button>
           </Link>
         ))}
       </motion.div>

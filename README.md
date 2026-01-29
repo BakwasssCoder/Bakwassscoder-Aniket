@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Aniket Prashar - Portfolio
 
-## Getting Started
+[![Instagram](https://img.shields.io/badge/Instagram-@anikettt.tsx-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/anikettt.tsx/)
+[![Twitter](https://img.shields.io/badge/Twitter-@anikettt__tsx-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/anikettt_tsx)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aniket_Prashar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aniket-prashar/)
 
-First, run the development server:
+## 👨‍💻 About Me
+
+🧠 A curious mind coding across the galaxies of AI, Web, and Cloud  
+⚙️ Crafting projects that merge **automation + aesthetics + analytics**  
+🚀 Building SaaS, LLM tools, Next.js apps, and Flask AI pipelines  
+🌍 Focused on innovation, creativity, and real-world problem solving  
+💀 Debugging feels like hacking NASA systems at 3 AM  
+☕ Fueled by caffeine and cosmic vibes  
+🪐 **"Dream in code. Build in logic. Launch in style."**
+
+## ⚔️ Arsenal: My Galactic Tech Stack
+
+### 💻 Languages & Frameworks
+- **Frontend**: React, Next.js, Tailwind CSS
+- **Backend**: Node.js, Flask, Express
+- **Mobile**: React Native
+
+### ⚙️ Frameworks
+React, Next.js, Flask, Node.js
+
+### ☁️ Cloud Orbit
+AWS, Firebase, Vercel, Netlify, Spheron Cloud
+
+### 🧰 Dev Tools
+VS Code, Docker, Postman, Git CLI
+
+### 🧬 AI Stack
+TensorFlow, OpenAI API, Pandas, PyTorch
+
+### 🎨 Design Systems
+Tailwind, Figma, Neon, Glassmorphism UI
+
+## 🚀 Projects Deployed Across The Universe
+
+| 🌠 Project | 🧩 Description | 🔗 Link |
+|-----------|---------------|---------|
+| **AgroVision** | AI-based Smart Agriculture & Crop Prediction System 🌾 | [View](#) |
+| **AI Trainer Hub** | LLM Fine-tuning Pipeline using Spheron Cloud 🧠 | [View](#) |
+| **Hackathon Finder** | Web App listing Tier 1-3 Indian Hackathons 🇮🇳 | [View](#) |
+| **ToolsHub** | 40+ Dev Utilities: Converters, Generators & Formatters ⚙️ | [View](#) |
+| **Barter System** | Skill Swapping App – Trade Skills, Not Money 💱 | [View](#) |
+| **Local Event Finder** | Discover events near you using Geo APIs 📍 | [View](#) |
+| **Crypto Trading App** | Real-time Trading with Live Charts & WebSockets 💹 | [View](#) |
+| **TerminalBuild Portfolio** | Interactive Terminal-Themed Portfolio 💻 | [View](#) |
+| **ERP Dashboard** | Full-Stack Business Management Suite 📊 | [View](#) |
+| **Fitness 21** | Gym Management App with Dashboard 💪 | [View](#) |
+| **LinguaUP** | AI-Powered Translation & Learning App 🌐 | [View](#) |
+| **New Bikaner Sweets** | Ecommerce Website for a local Indian brand 🍬 | [View](#) |
+
+## 💼 Business Ventures
+
+Co-founder of:
+- **[choomantar.online](https://choomantar.online)** - Digital Solutions Platform
+- **[qubexdeliver.com](https://qubexdeliver.com)** - Delivery & Logistics Platform
+
+## 🛠️ Getting Started
+
+This is a [Next.js](https://nextjs.org) portfolio project.
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### Development
+
+```bash
+# Run the development server
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+portfolio/
+├── app/                    # Next.js app directory
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # Reusable UI components
+├── features/              # Feature-specific components
+│   └── landingpage/       # Landing page sections
+├── lib/                   # Utility functions
+└── public/                # Static assets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ✨ Modern, animated UI with Framer Motion
+- 🌓 Dark mode support
+- 📱 Fully responsive design
+- 🎭 Interactive components
+- 🚀 Optimized performance
+- 📊 GitHub contribution graph
+- 🐦 Twitter card integration
+- 🎵 Favorite songs carousel
+- 📈 Personal stats visualization
 
-## Deploy on Vercel
+## 🤝 Connect With Me
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Instagram**: [@anikettt.tsx](https://www.instagram.com/anikettt.tsx/)
+- **Twitter**: [@anikettt_tsx](https://x.com/anikettt_tsx)
+- **LinkedIn**: [Aniket Prashar](https://www.linkedin.com/in/aniket-prashar/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Built with 💙 by Aniket Prashar**  
+*"Dream in code. Build in logic. Launch in style."* 🚀
