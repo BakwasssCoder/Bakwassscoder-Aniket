@@ -46,8 +46,8 @@ const BusinessVenturesPremium = () => {
                         <button
                             onClick={() => setActiveTab('choomantar')}
                             className={`px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 ${activeTab === 'choomantar'
-                                    ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg shadow-orange-500/50'
-                                    : 'text-gray-400 hover:text-white'
+                                ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg shadow-orange-500/50'
+                                : 'text-gray-400 hover:text-white'
                                 }`}
                         >
                             🚀 Choomantar
@@ -55,8 +55,8 @@ const BusinessVenturesPremium = () => {
                         <button
                             onClick={() => setActiveTab('qubex')}
                             className={`px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 ${activeTab === 'qubex'
-                                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-blue-500/50'
-                                    : 'text-gray-400 hover:text-white'
+                                ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-blue-500/50'
+                                : 'text-gray-400 hover:text-white'
                                 }`}
                         >
                             📦 Qubex
@@ -86,14 +86,22 @@ const ChoomantarContent = () => {
                 <div className='absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity'></div>
                 <div className='relative bg-gradient-to-br from-orange-900/60 to-red-900/60 border-2 border-orange-500/50 rounded-3xl p-8 md:p-12 backdrop-blur-xl'>
                     <div className='flex flex-col md:flex-row items-start md:items-center gap-6 mb-8'>
-                        <div className='text-7xl md:text-8xl animate-bounce'>🚀</div>
+                        <a href="https://www.choomantar.online" target="_blank" rel="noopener noreferrer" className='hover:scale-110 transition-transform'>
+                            <img src="https://i.ibb.co/pH1GCq3/image.png" alt="Choomantar Logo" className='w-20 h-20 md:w-24 md:h-24 rounded-xl' />
+                        </a>
                         <div className='flex-1'>
-                            <h3 className={`${geist.className} text-4xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 bg-clip-text mb-3`}>
-                                Choomantar
-                            </h3>
-                            <p className={`${inter.className} text-xl md:text-2xl text-gray-200`}>
+                            <a href="https://www.choomantar.online" target="_blank" rel="noopener noreferrer" className='hover:opacity-80 transition-opacity'>
+                                <h3 className={`${geist.className} text-4xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 bg-clip-text mb-3`}>
+                                    Choomantar
+                                </h3>
+                            </a>
+                            <p className={`${inter.className} text-xl md:text-2xl text-gray-200 mb-2`}>
                                 Bihar ka Apna O2O Commerce System
                             </p>
+                            <a href="https://www.choomantar.online" target="_blank" rel="noopener noreferrer" className='inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 transition-colors'>
+                                <span className='text-sm'>🌐</span>
+                                <span className={`${inter.className} text-sm font-medium`}>www.choomantar.online</span>
+                            </a>
                         </div>
                     </div>
 
@@ -238,14 +246,22 @@ const QubexContent = () => {
                 <div className='absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity'></div>
                 <div className='relative bg-gradient-to-br from-blue-900/60 to-purple-900/60 border-2 border-blue-500/50 rounded-3xl p-8 md:p-12 backdrop-blur-xl'>
                     <div className='flex flex-col md:flex-row items-start md:items-center gap-6 mb-8'>
-                        <div className='text-7xl md:text-8xl animate-bounce'>📦</div>
+                        <a href="https://www.qubexdeliver.com" target="_blank" rel="noopener noreferrer" className='hover:scale-110 transition-transform'>
+                            <img src="https://i.ibb.co/XrGVgHSs/image.png" alt="Qubex Logo" className='w-20 h-20 md:w-24 md:h-24 rounded-xl' />
+                        </a>
                         <div className='flex-1'>
-                            <h3 className={`${geist.className} text-4xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text mb-3`}>
-                                Qubex Deliver
-                            </h3>
-                            <p className={`${inter.className} text-xl md:text-2xl text-gray-200`}>
+                            <a href="https://www.qubexdeliver.com" target="_blank" rel="noopener noreferrer" className='hover:opacity-80 transition-opacity'>
+                                <h3 className={`${geist.className} text-4xl md:text-6xl font-bold text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text mb-3`}>
+                                    Qubex Deliver
+                                </h3>
+                            </a>
+                            <p className={`${inter.className} text-xl md:text-2xl text-gray-200 mb-2`}>
                                 Your Personal Shopper Across India
                             </p>
+                            <a href="https://www.qubexdeliver.com" target="_blank" rel="noopener noreferrer" className='inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors'>
+                                <span className='text-sm'>🌐</span>
+                                <span className={`${inter.className} text-sm font-medium`}>www.qubexdeliver.com</span>
+                            </a>
                         </div>
                     </div>
 
