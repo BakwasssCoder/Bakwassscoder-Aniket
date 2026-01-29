@@ -26,14 +26,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+      </head>
       <body
         //  style={{
         //         background: "radial-gradient(125% 125% at 50% 90%, #000000 40%, #0d1a36 100%)",
         //       }}
 
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
-        <div className=" relative">
+        <div className="relative w-full overflow-x-hidden">
           <div className="  fixed z-90 py-5  w-full ">
             <MorphicNavbar />
           </div>

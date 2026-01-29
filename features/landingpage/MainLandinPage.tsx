@@ -30,7 +30,7 @@ import PhilosophyMission from "./components/PhilosophyMission";
 
 const MainLandinPage = () => {
   return (
-    <div className=" min-h-screen w-screen  ">
+    <div className="min-h-screen w-full overflow-x-hidden">
       {/* Hero Section */}
       <section id="home">
         <Hero />

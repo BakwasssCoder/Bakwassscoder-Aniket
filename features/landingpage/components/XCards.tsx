@@ -9,11 +9,11 @@ const XCards = () => {
       style={{
         background: "radial-gradient(125% 125% at 50% 100%, #000000 40%, #010133 100%)",
       }}
-      className=" flex flex-col ">
-      <div className=" flex justify-center mt-30 ">
-        <ShimmerText className=' text-6xl' text={"MY TWEETS"} />
+      className=" flex flex-col py-10">
+      <div className=" flex justify-center mt-10 mb-8 px-4">
+        <ShimmerText className='text-4xl md:text-6xl text-center' text={"MY TWEETS"} />
       </div>
-      <div className=" h-[50vh] items-center w-full flex justify-evenly">
+      <div className="min-h-[50vh] py-10 px-4 w-full flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
         <TweetCard
           authorName={"Aniket Prashar"}
           authorHandle={"anikettt_tsx"}
