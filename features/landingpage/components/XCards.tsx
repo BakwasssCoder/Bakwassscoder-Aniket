@@ -18,37 +18,37 @@ const XCards = () => {
           authorName={"Aniket Prashar"}
           authorHandle={"anikettt_tsx"}
           authorImage={
-            "https://pbs.twimg.com/profile_images/1941829109262528512/WTgPV2dk_400x400.jpg"
+            "https://i.ibb.co/PzGWxCqT/image.jpg"
           }
           reply={{
-            authorName: "Tech Community",
-            authorHandle: "techdev2025",
+            authorName: "AI Enthusiasts",
+            authorHandle: "ai_community",
             authorImage:
               "https://pbs.twimg.com/profile_images/1593304942210478080/TUYae5z7_400x400.jpg",
-            content: "This is the way! 🚀",
+            content: "This is exactly what the industry needs! 🔥",
             isVerified: true,
-            timestamp: "Jan 15, 2026",
+            timestamp: "Jan 25, 2026",
           }}
-          content={["Building SaaS tools that merge automation + aesthetics + analytics 🚀 Dream in code. Build in logic. Launch in style."]}
-          timestamp={"Jan 15, 2026"}
+          content={["Just finished building an LLM-powered chatbot that understands context across 10+ conversations. The secret? Fine-tuning with domain-specific data + smart prompt engineering. AI isn't magic—it's manipulation of intelligence. 🧠✨ #AI #MachineLearning #LLM"]}
+          timestamp={"Jan 25, 2026"}
         />
         <TweetCard
           authorName={"Aniket Prashar"}
           authorHandle={"anikettt_tsx"}
           reply={{
-            authorName: "Dev Friends",
-            authorHandle: "devfriends",
+            authorName: "ML Engineers",
+            authorHandle: "ml_engineers",
             authorImage:
               "https://pbs.twimg.com/profile_images/1593304942210478080/TUYae5z7_400x400.jpg",
-            content: "Debugging at 3 AM hits different 💀",
+            content: "The future of AI is human-centric! 🚀",
             isVerified: true,
-            timestamp: "Jan 20, 2026",
+            timestamp: "Jan 27, 2026",
           }}
           authorImage={
-            "https://pbs.twimg.com/profile_images/1941829109262528512/WTgPV2dk_400x400.jpg"
+            "https://i.ibb.co/PzGWxCqT/image.jpg"
           }
-          content={["Debugging feels like hacking NASA systems at 3 AM ☕ Fueled by caffeine and cosmic vibes 🪐"]}
-          timestamp={"Jan 20, 2026"}
+          content={["Most people think AI will replace developers. I think AI will empower developers to build 10x faster. We're not competing with AI—we're collaborating with it. The real skill? Knowing how to manipulate AI to solve real problems. 🤖💡 #ArtificialIntelligence #FutureOfWork"]}
+          timestamp={"Jan 27, 2026"}
         />
       </div>
       <div className=" p-10 flex justify-center ">
