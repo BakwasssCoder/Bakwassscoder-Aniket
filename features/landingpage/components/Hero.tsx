@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { useState, useEffect } from 'react'
 import { Skiper58, TextRoll } from '@/components/ui/skiper-ui/skiper58'
 import { ColorTheme } from '@/lib/theme'
 import { bodoniModa, geist, inter, notoSansDevanagari, pacifico, pixelifySans, rozhaOne, yatraOne } from '@/lib/fonts';
@@ -11,6 +13,15 @@ import DynamicText from '@/components/kokonutui/dynamic-text';
 
 const Hero = () => {
   const { bgPrimary, bgSecondary, textPrimary, textSecondary, border } = ColorTheme();
+  const [currentText, setCurrentText] = useState('ANIKET PRASHAR');
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentText(prev => prev === 'ANIKET PRASHAR' ? 'BakwasssCoder' : 'ANIKET PRASHAR');
+    }, 3000); // Change every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div
@@ -24,8 +35,12 @@ const Hero = () => {
 
         {/* Main Title */}
         <div className=' w-full flex flex-col items-center gap-4'>
-          <TextRoll className={` ${textPrimary} ${geist.className} text-amber-300 font-bold text-6xl md:text-8xl  `} center >
-            ANIKET PRASHAR
+          <TextRoll
+            key={currentText}
+            className={` ${textPrimary} ${geist.className} text-amber-300 font-bold text-6xl md:text-8xl transition-all duration-500`}
+            center
+          >
+            {currentText}
           </TextRoll>
 
           <h2 className={` ${geist.className} text-white text-3xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent`}>
