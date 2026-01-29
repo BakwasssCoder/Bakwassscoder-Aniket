@@ -30,9 +30,12 @@ export function MorphicNavbar() {
   };
 
   return (
-    <nav className="mx-auto max-w-4xl px-4 py-2">
+    <nav className="mx-auto max-w-4xl px-4 py-2 md:py-2 max-md:py-3 max-md:px-2">
       <div className="flex items-center justify-center">
-        <div className="glass flex items-center justify-between overflow-hidden rounded-xl">
+        <div className="glass flex items-center justify-between overflow-hidden rounded-xl 
+                        md:rounded-xl max-md:rounded-2xl
+                        max-md:bg-black/80 max-md:backdrop-blur-xl max-md:border max-md:border-white/10 max-md:shadow-2xl
+                        max-md:w-full max-md:justify-around">
           {Object.entries(navItems).map(([path, { name }], index, array) => {
             const isActive = isActiveLink(path);
             const isFirst = index === 0;
@@ -45,8 +48,9 @@ export function MorphicNavbar() {
               <Link
                 className={clsx(
                   "flex items-center justify-center bg-black p-1.5 px-4 text-lg text-white transition-all duration-300 dark:bg-white dark:text-black",
+                  "max-md:text-sm max-md:px-3 max-md:py-2",
                   isActive
-                    ? "mx-2 rounded-xl font-semibold text-lg"
+                    ? "mx-2 rounded-xl font-semibold text-lg max-md:text-sm"
                     : clsx(
                       (isActiveLink(prevPath || "") || isFirst) &&
                       "rounded-l-xl",

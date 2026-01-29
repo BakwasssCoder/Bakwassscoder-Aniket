@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </head>
       <body
         //  style={{
@@ -37,11 +37,16 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <div className="relative w-full overflow-x-hidden">
-          <div className="  fixed z-90 py-5  w-full ">
+          {/* Navigation - Top on Desktop, Bottom on Mobile */}
+          <div className="fixed z-90 w-full top-0 md:top-0 md:py-5 bottom-auto md:bottom-auto
+                          max-md:bottom-0 max-md:top-auto max-md:py-0 max-md:pb-safe">
             <MorphicNavbar />
           </div>
 
-          {children}
+          {/* Main Content - Add padding for mobile bottom nav */}
+          <div className="pb-0 md:pb-0 max-md:pb-24">
+            {children}
+          </div>
 
           {/* Floating WhatsApp Button */}
           <FloatingWhatsApp />
